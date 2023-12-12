@@ -2,9 +2,11 @@
 @import "variables/global";
 @import "themes/normal";
 @import "themes/dark";
+@import 'shared/assets/OpenSansCondensed/stylesheet.css';
 
 .app {
     font: var(--font-m);
+    font-family: "Open Sans Condensed";
 
     background: var(--bg-color);
     color: var(--primary-color);

@@ -3,15 +3,28 @@
    height: var(--navbar-height);
    background: var(--inverted-bg-color);
    display: flex;
+   flex-direction: row;
+   justify-content: space-between;
    align-items: center;
-   padding: 20px;
+   padding: 0 60px 0 10px;
 }
 
-.links {
-   margin-left: auto;
+.divLeft {
+   font-size: 36px;
+   font-style: normal;
+   font-weight: 300;
 }
 
-.mainLink {
-   margin-right: 15px;
+.divRight {
+   display: flex;
+   flex-direction: row;
+   align-items: center;
 }
 
+.registrData {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-items: center;
+   padding: 0 40px;
+}
