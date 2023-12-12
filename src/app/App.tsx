@@ -10,7 +10,7 @@ const App = () => {
    const { theme } = useTheme();
 
     return (
-        <div className={classNames('app', {}, [theme])}>
+        <div className={classNames('app', {}, [theme,"noselect"])}>
             <Navbar />
             <div className="content-page">
                 <Sidebar />
