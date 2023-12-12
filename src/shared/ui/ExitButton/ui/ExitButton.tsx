@@ -1,7 +1,8 @@
 import { classNames } from 'shared/lib/classNames/classNames';
 import { Theme, useTheme } from "app/providers/ThemeProvider";
 import cls from './ExitButton.module.scss';
-import EnableIcon from 'shared/assets/icons/exitEnable.svg';
+import LightIcon from 'shared/assets/icons/exit-ligth.svg';
+import DarkIcon from 'shared/assets/icons/exit-dark.svg';
 import { Button, ThemeButton } from 'shared/ui/Button/Button';
 
 interface ExitButtonProps {
@@ -12,6 +13,7 @@ export const ExitButton = (props: ExitButtonProps) => {
    const {
       className,
    } = props;
+   const { theme } = useTheme();
 
    const toggleExit = () => {
       console.log("exit ")
@@ -23,7 +25,7 @@ export const ExitButton = (props: ExitButtonProps) => {
          className={classNames(cls.ExitButton, {}, [className])}
          onClick={toggleExit}
       >
-         <EnableIcon />
+         {theme === Theme.DARK ? <DarkIcon /> : <LightIcon />}
       </Button >
    );
 };
