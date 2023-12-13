@@ -11,9 +11,20 @@
    width: var(--sidebar-width-collapsed);
 }
 
+.toggleButton {
+   // position: absolute;
+   // bottom: 20px;
+   // display: flex;
+   display: flex;
+   flex-direction: row;
+   justify-content: flex-end;
+   width: 100%;
+   // border: 1px solid red;
+}
+
 .switchers {
    position: absolute;
-   bottom: 20px;
+   bottom: 10px;
    display: flex;
    justify-content: center;
    width: 100%;

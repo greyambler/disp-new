@@ -12,7 +12,7 @@ export const EnterDate = (props: EnterDateProps) => {
 
    return (
       <div className={classNames(cls.EnterDate, {}, [className])}>
-       <div>{`Вход: тело1тело1`}</div>
+       <div>{`Вход: тело1 тело1`}</div>
       </div>
    );
 };
